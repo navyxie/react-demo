@@ -1,0 +1,123 @@
+*{
+	margin:0;
+	padding:0;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}
+em,i,strong{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+}
+.bold{
+	font-weight: bold;
+}
+@textColor:#d4470f;
+@maxWidth:400px;
+html,body{
+	background: #ffefa2;
+	font-size: 14px;
+	color: @textColor;
+	width: 100%;
+	max-width: @maxWidth;
+	margin:auto; 
+} 
+
+body{
+	width: 100%;
+}
+#AppHeader{
+	min-height: 10px;
+	#logo{
+		padding: 10px;
+		img{
+			width: 120px;
+		}
+	}
+}
+#AppContainer{
+	.title{
+		text-align: center;
+		font-size: 25px;
+		padding-bottom: 10px;
+	} 
+	.iconList{
+		overflow: hidden;
+		.list{
+			display: block;
+			width: 26%;
+			text-align: center;
+			float: left;
+			img{
+				width: 100%;
+				max-width: 50%;
+			}
+			b{
+				display: inline-block;
+				padding: 5px 0;
+				margin: auto;
+				font-size: 12px;
+			}
+			span{
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+			}
+		}
+		.one{
+			margin-left: 11%;
+		}
+	}
+	.actionBanner{
+		padding-top: 10px;
+		img{
+			width: 100%; 
+		}
+	}
+}
+#AppFooter{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	.footer{
+		max-width: @maxWidth;
+		.top_banner{
+			position: relative;
+			z-index: 1;
+			width: 100%;
+			text-align: center;
+			bottom: 20px;
+			img{
+				width: 100%; 
+			}
+		}	
+		.bottom_banner{
+			width: 100%;
+			height: 47px;
+			max-width: @maxWidth;
+			background: url('../../images/share/bottom_bg.png') repeat-x;
+			position: absolute;
+			bottom:0;
+			z-index: 2;
+		}
+	}
+}
+.shareTipDiv{
+	position: absolute;
+	background: #fff;
+	left: 0;
+	top:0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	img{
+		max-width: 100%;
+		overflow: hidden;
+	}
+}
