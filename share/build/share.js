@@ -119,27 +119,7 @@
 			);
 		},
 		downLoadClick:function(){
-			// React.render(<ShareTipComponent />,document.getElementById('shareTipContainer'));
-			sendGa({text:"考拉理财APP-分享页面-点击我要领取"});
-			//tood
-			//alert('敬请期待');
-			if(isIOS()){
-				window.location.href = 'https://itunes.apple.com/us/app/kao-la-li-cai/id962314981?l=zh&ls=1&mt=8';
-				// window.location.href = "http://mp.weixin.qq.com/s?__biz=MzAwNDEyMzgyMA==&mid=203946186&idx=1&sn=18889718f515579272cf83266e1cb696#rd";
-				//todo,attension link
-			}else{
-				if(is_weixin()){
-					React.render(React.createElement(ShareTipComponent, null),document.getElementById('shareTipContainer'));
-					// var tipDiv = document.createElement("div");
-					// tipDiv.setAttribute('class','shareTipDiv');
-					// var img = document.createElement('img');
-					// img.setAttribute('src','images/share/android_share_tip.png');
-					// tipDiv.appendChild(img);
-					// document.body.appendChild(tipDiv);
-				}else{
-					window.location.href = "http://7vigz5.com1.z0.glb.clouddn.com/kllc_share.apk";//todo,app download link
-				}
-			}
+			React.render(React.createElement(ShareTipComponent, null),document.getElementById('shareTipContainer'));
 		}
 	});
 	React.render(
