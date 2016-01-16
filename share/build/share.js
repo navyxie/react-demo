@@ -47,10 +47,10 @@
 	var kl_state = getSearchParam('kl_state');
 	var dataMap = {
 		"f_h":{
-			imgUrl:"images/share/bottom_banner.png"
+			imgUrl:"images/bottom_banner.png"
 		},
 		"o_t":{
-			imgUrl:"images/share/bottom_banner_500.png"
+			imgUrl:"images/bottom_banner_500.png"
 		}
 	}
 	var currentData = dataMap[kl_state];
@@ -61,7 +61,7 @@
 		render:function(){
 			return (
 				React.createElement("div", {id: "logo"}, 
-					React.createElement("img", {src: "images/share/logo.png"})
+					React.createElement("img", {src: "images/logo.png"})
 				)
 			);
 		}
@@ -70,7 +70,7 @@
 		render:function(){
 			return(
 				React.createElement("div", {className: "shareTipDiv", onClick: this.closeTip}, 
-					React.createElement("img", {src: "images/share/android_share_tip.png"})
+					React.createElement("img", {src: "images/android_share_tip.png"})
 				)
 			)
 		},
@@ -93,19 +93,19 @@
 					React.createElement("div", {className: "iconList"}, 
 						React.createElement("div", {className: "one list"}, 
 							React.createElement("span", null, 
-								React.createElement("img", {src: "images/share/icon_1.png"})
+								React.createElement("img", {src: "images/icon_1.png"})
 							), 
 							React.createElement("b", null, "余额宝2倍收益")
 						), 
 						React.createElement("div", {className: "two list"}, 
 							React.createElement("span", null, 
-								React.createElement("img", {src: "images/share/icon_2.png"})
+								React.createElement("img", {src: "images/icon_2.png"})
 							), 
 							React.createElement("b", null, "1元理财")
 						), 
 						React.createElement("div", {className: "three list"}, 
 							React.createElement("span", null, 
-								React.createElement("img", {src: "images/share/icon_3.png"})
+								React.createElement("img", {src: "images/icon_3.png"})
 							), 
 							React.createElement("b", null, "随存随取")
 						)
