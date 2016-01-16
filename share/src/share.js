@@ -47,10 +47,10 @@
 	var kl_state = getSearchParam('kl_state');
 	var dataMap = {
 		"f_h":{
-			imgUrl:"images/share/bottom_banner.png"
+			imgUrl:"images/bottom_banner.png"
 		},
 		"o_t":{
-			imgUrl:"images/share/bottom_banner_500.png"
+			imgUrl:"images/bottom_banner_500.png"
 		}
 	}
 	var currentData = dataMap[kl_state];
@@ -61,7 +61,7 @@
 		render:function(){
 			return (
 				<div id="logo">
-					<img src="images/share/logo.png" />
+					<img src="images/logo.png" />
 				</div>
 			);
 		}
@@ -70,7 +70,7 @@
 		render:function(){
 			return(
 				<div className="shareTipDiv" onClick={this.closeTip}>
-					<img src="images/share/android_share_tip.png" />
+					<img src="images/android_share_tip.png" />
 				</div>
 			)
 		},
@@ -93,19 +93,19 @@
 					<div className="iconList">
 						<div className="one list">
 							<span>
-								<img src="images/share/icon_1.png" />
+								<img src="images/icon_1.png" />
 							</span>
 							<b>余额宝2倍收益</b>
 						</div>
 						<div className="two list">
 							<span>
-								<img src="images/share/icon_2.png" />
+								<img src="images/icon_2.png" />
 							</span>
 							<b>1元理财</b>
 						</div>
 						<div className="three list">
 							<span>
-								<img src="images/share/icon_3.png" />
+								<img src="images/icon_3.png" />
 							</span>
 							<b>随存随取</b>
 						</div>
